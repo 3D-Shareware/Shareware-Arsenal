@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "sharewarearsenal:bronze_ingot"
+  },
+  "base": {
+    "item": "minecraft:iron_chestplate"
+  },
+  "result": {
+    "item": "sharewarearsenal:bronze_chestplate"
+  },
+  "template": {
+    "item": "sharewarearsenal:bronze_upgrade_smithing_template"
+  }
+}

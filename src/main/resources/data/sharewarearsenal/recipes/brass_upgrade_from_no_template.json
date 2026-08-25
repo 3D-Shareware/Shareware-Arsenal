@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "C": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "minecraft:bell"
+    }
+  },
+  "pattern": [
+    "#S#",
+    "#C#",
+    "###"
+  ],
+  "result": {
+    "item": "sharewarearsenal:brass_upgrade_smithing_template"
+  },
+  "show_notification": true
+}

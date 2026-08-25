@@ -62,6 +62,10 @@ public class Sharewarearsenal {
     // Creative tab
     public static final RegistryObject<CreativeModeTab> SHAREWARE_ARSENAL_TAB = CREATIVE_MODE_TABS.register("shareware_arsenal", () -> CreativeModeTab.builder().title(Component.translatable("creativetab.sharewarearsenal.arsenal")).withTabsBefore(CreativeModeTabs.COMBAT).icon(() -> RED_DIAMOND.get().getDefaultInstance()).displayItems((parameters, output) -> {
         output.accept(RED_DIAMOND.get());
+        output.accept(RED_DIAMOND_HELMET.get());
+        output.accept(RED_DIAMOND_CHESTPLATE.get());
+        output.accept(RED_DIAMOND_LEGGINGS.get());
+        output.accept(RED_DIAMOND_BOOTS.get());
         output.accept(RED_DIAMOND_SWORD.get());
         output.accept(RED_DIAMOND_AXE.get());
         output.accept(RED_DIAMOND_PICKAXE.get());
@@ -69,18 +73,28 @@ public class Sharewarearsenal {
         output.accept(RED_DIAMOND_HOE.get());
 
         output.accept(BRONZE_INGOT.get());
+        output.accept(BRONZE_HELMET.get());
+        output.accept(BRONZE_CHESTPLATE.get());
+        output.accept(BRONZE_LEGGINGS.get());
+        output.accept(BRONZE_BOOTS.get());
         output.accept(BRONZE_SWORD.get());
         output.accept(BRONZE_AXE.get());
         output.accept(BRONZE_PICKAXE.get());
         output.accept(BRONZE_SHOVEL.get());
         output.accept(BRONZE_HOE.get());
+        output.accept(BRONZE_UPGRADE_SMITHING_TEMPLATE.get());
 
         output.accept(BRASS_INGOT.get());
+        output.accept(BRASS_HELMET.get());
+        output.accept(BRASS_CHESTPLATE.get());
+        output.accept(BRASS_LEGGINGS.get());
+        output.accept(BRASS_BOOTS.get());
         output.accept(BRASS_SWORD.get());
         output.accept(BRASS_AXE.get());
         output.accept(BRASS_PICKAXE.get());
         output.accept(BRASS_SHOVEL.get());
         output.accept(BRASS_HOE.get());
+        output.accept(BRASS_UPGRADE_SMITHING_TEMPLATE.get());
     }).build());
 
     public Sharewarearsenal() {
@@ -125,22 +139,36 @@ public class Sharewarearsenal {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(RED_DIAMOND_PICKAXE);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(RED_DIAMOND_AXE);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(RED_DIAMOND_HOE);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(RED_DIAMOND_HELMET.get());
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(RED_DIAMOND_CHESTPLATE.get());
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(RED_DIAMOND_LEGGINGS.get());
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(RED_DIAMOND_BOOTS.get());
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(RED_DIAMOND_SWORD);
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(RED_DIAMOND_AXE);
 
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) event.accept(BRONZE_INGOT);
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) event.accept(BRONZE_UPGRADE_SMITHING_TEMPLATE);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(BRONZE_SHOVEL);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(BRONZE_PICKAXE);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(BRONZE_AXE);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(BRONZE_HOE);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRONZE_HELMET.get());
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRONZE_CHESTPLATE.get());
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRONZE_LEGGINGS.get());
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRONZE_BOOTS.get());
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRONZE_SWORD);
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRONZE_AXE);
 
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) event.accept(BRASS_INGOT);
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) event.accept(BRASS_UPGRADE_SMITHING_TEMPLATE);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(BRASS_SHOVEL);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(BRASS_PICKAXE);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(BRASS_AXE);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(BRASS_HOE);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRASS_HELMET.get());
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRASS_CHESTPLATE.get());
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRASS_LEGGINGS.get());
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRASS_BOOTS.get());
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRASS_SWORD);
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRASS_AXE);
     }

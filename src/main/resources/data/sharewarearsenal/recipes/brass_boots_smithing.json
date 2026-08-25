@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "sharewarearsenal:brass_ingot"
+  },
+  "base": {
+    "item": "minecraft:golden_boots"
+  },
+  "result": {
+    "item": "sharewarearsenal:brass_boots"
+  },
+  "template": {
+    "item": "sharewarearsenal:brass_upgrade_smithing_template"
+  }
+}

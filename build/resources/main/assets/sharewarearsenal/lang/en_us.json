@@ -7,6 +7,10 @@
   "item.sharewarearsenal.red_diamond_pickaxe": "Red Diamond Pickaxe",
   "item.sharewarearsenal.red_diamond_shovel": "Red Diamond Shovel",
   "item.sharewarearsenal.red_diamond_hoe": "Red Diamond Hoe",
+  "item.sharewarearsenal.red_diamond_helmet": "Red Diamond Helmet",
+  "item.sharewarearsenal.red_diamond_chestplate": "Red Diamond Chestplate",
+  "item.sharewarearsenal.red_diamond_leggings": "Red Diamond Leggings",
+  "item.sharewarearsenal.red_diamond_boots": "Red Diamond Boots",
 
   "item.sharewarearsenal.bronze_ingot": "Bronze Ingot",
   "item.sharewarearsenal.bronze_sword": "Bronze Sword",
@@ -14,6 +18,10 @@
   "item.sharewarearsenal.bronze_pickaxe": "Bronze Pickaxe",
   "item.sharewarearsenal.bronze_shovel": "Bronze Shovel",
   "item.sharewarearsenal.bronze_hoe": "Bronze Hoe",
+  "item.sharewarearsenal.bronze_helmet": "Bronze Helmet",
+  "item.sharewarearsenal.bronze_chestplate": "Bronze Chestplate",
+  "item.sharewarearsenal.bronze_leggings": "Bronze Leggings",
+  "item.sharewarearsenal.bronze_boots": "Bronze Boots",
 
   "item.sharewarearsenal.brass_ingot": "Brass Ingot",
   "item.sharewarearsenal.brass_sword": "Brass Sword",
@@ -21,13 +29,27 @@
   "item.sharewarearsenal.brass_pickaxe": "Brass Pickaxe",
   "item.sharewarearsenal.brass_shovel": "Brass Shovel",
   "item.sharewarearsenal.brass_hoe": "Brass Hoe",
+  "item.sharewarearsenal.brass_helmet": "Brass Helmet",
+  "item.sharewarearsenal.brass_chestplate": "Brass Chestplate",
+  "item.sharewarearsenal.brass_leggings": "Brass Leggings",
+  "item.sharewarearsenal.brass_boots": "Brass Boots",
 
   "tooltip.sharewarearsenal.hold_shift_for_info": "Hold SHIFT for info...",
   "tooltip.sharewarearsenal.red_diamond_pickaxe": "Mining Diamond Ore always drops a Red Diamond",
   "tooltip.sharewarearsenal.red_diamond_tool_strike": "Heals back 25% of damage dealt",
   "tooltip.sharewarearsenal.red_diamond_tool_mine": "Heals 1 health per block mined",
 
-  "tooltip.sharewarearsenal.generic_alloy": "Applies to: ",
+  "item.sharewarearsenal.bronze_upgrade_smithing_template": "Smithing Template",
+  "item.sharewarearsenal.brass_upgrade_smithing_template": "Smithing Template",
+
+  "tooltip.sharewarearsenal.bronze_upgrade": "Bronze Upgrade",
+  "tooltip.sharewarearsenal.brass_upgrade": "Brass Upgrade",
+
+  "tooltip.sharewarearsenal.generic_alloy": "Applies to:",
   "tooltip.sharewarearsenal.bronze_alloy": " Iron Equipment",
-  "tooltip.sharewarearsenal.brass_alloy": " Gold Equipment"
+  "tooltip.sharewarearsenal.brass_alloy": " Gold Equipment",
+
+  "tooltip.sharewarearsenal.generic_smithing": "Ingredients:",
+  "tooltip.sharewarearsenal.bronze_smithing": " Bronze Ingot",
+  "tooltip.sharewarearsenal.brass_smithing": " Brass Ingot"
 }

@@ -14,7 +14,7 @@ public class BrassTier implements Tier {
 
     @Override
     public float getSpeed() {
-        return 16;
+        return 13;
     }
 
     @Override

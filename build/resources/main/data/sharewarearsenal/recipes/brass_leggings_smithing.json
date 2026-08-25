@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "sharewarearsenal:brass_ingot"
+  },
+  "base": {
+    "item": "minecraft:golden_leggings"
+  },
+  "result": {
+    "item": "sharewarearsenal:brass_leggings"
+  },
+  "template": {
+    "item": "sharewarearsenal:brass_upgrade_smithing_template"
+  }
+}
