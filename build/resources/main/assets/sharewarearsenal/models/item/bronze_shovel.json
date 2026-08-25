@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "sharewarearsenal:item/bronze_shovel"
+  }
+}

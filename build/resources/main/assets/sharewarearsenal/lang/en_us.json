@@ -1,0 +1,33 @@
+{
+  "creativetab.sharewarearsenal.arsenal": "Shareware's Arsenal",
+
+  "item.sharewarearsenal.red_diamond": "Red Diamond",
+  "item.sharewarearsenal.red_diamond_sword": "Red Diamond Sword",
+  "item.sharewarearsenal.red_diamond_axe": "Red Diamond Axe",
+  "item.sharewarearsenal.red_diamond_pickaxe": "Red Diamond Pickaxe",
+  "item.sharewarearsenal.red_diamond_shovel": "Red Diamond Shovel",
+  "item.sharewarearsenal.red_diamond_hoe": "Red Diamond Hoe",
+
+  "item.sharewarearsenal.bronze_ingot": "Bronze Ingot",
+  "item.sharewarearsenal.bronze_sword": "Bronze Sword",
+  "item.sharewarearsenal.bronze_axe": "Bronze Axe",
+  "item.sharewarearsenal.bronze_pickaxe": "Bronze Pickaxe",
+  "item.sharewarearsenal.bronze_shovel": "Bronze Shovel",
+  "item.sharewarearsenal.bronze_hoe": "Bronze Hoe",
+
+  "item.sharewarearsenal.brass_ingot": "Brass Ingot",
+  "item.sharewarearsenal.brass_sword": "Brass Sword",
+  "item.sharewarearsenal.brass_axe": "Brass Axe",
+  "item.sharewarearsenal.brass_pickaxe": "Brass Pickaxe",
+  "item.sharewarearsenal.brass_shovel": "Brass Shovel",
+  "item.sharewarearsenal.brass_hoe": "Brass Hoe",
+
+  "tooltip.sharewarearsenal.hold_shift_for_info": "Hold SHIFT for info...",
+  "tooltip.sharewarearsenal.red_diamond_pickaxe": "Mining Diamond Ore always drops a Red Diamond",
+  "tooltip.sharewarearsenal.red_diamond_tool_strike": "Heals back 25% of damage dealt",
+  "tooltip.sharewarearsenal.red_diamond_tool_mine": "Heals 1 health per block mined",
+
+  "tooltip.sharewarearsenal.generic_alloy": "Applies to: ",
+  "tooltip.sharewarearsenal.bronze_alloy": " Iron Equipment",
+  "tooltip.sharewarearsenal.brass_alloy": " Gold Equipment"
+}

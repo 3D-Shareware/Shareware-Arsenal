@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: sharewarearsenal
+Specification-Vendor: 
+Specification-Version: 1
+Implementation-Title: sharewarearsenal
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor: 
+Implementation-Timestamp: 2026-08-24T22:40:03-0500
+
