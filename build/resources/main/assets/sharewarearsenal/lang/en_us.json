@@ -34,6 +34,12 @@
   "item.sharewarearsenal.brass_leggings": "Brass Leggings",
   "item.sharewarearsenal.brass_boots": "Brass Boots",
 
+  "item.sharewarearsenal.blue_laser_sword": "Blue Laser Sword",
+  "item.sharewarearsenal.green_laser_sword": "Green Laser Sword",
+  "item.sharewarearsenal.red_laser_sword": "Red Laser Sword",
+  "item.sharewarearsenal.yellow_laser_sword": "Yellow Laser Sword",
+  "item.sharewarearsenal.purple_laser_sword": "Purple Laser Sword",
+
   "tooltip.sharewarearsenal.hold_shift_for_info": "Hold SHIFT for info...",
   "tooltip.sharewarearsenal.red_diamond_pickaxe": "Mining Diamond Ore always drops a Red Diamond",
   "tooltip.sharewarearsenal.red_diamond_tool_strike": "Heals back 25% of damage dealt",

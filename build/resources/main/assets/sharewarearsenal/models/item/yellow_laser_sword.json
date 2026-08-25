@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "sharewarearsenal:item/yellow_laser_sword"
+  }
+}

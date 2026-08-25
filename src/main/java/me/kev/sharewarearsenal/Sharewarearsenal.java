@@ -95,6 +95,13 @@ public class Sharewarearsenal {
         output.accept(BRASS_SHOVEL.get());
         output.accept(BRASS_HOE.get());
         output.accept(BRASS_UPGRADE_SMITHING_TEMPLATE.get());
+
+        output.accept(BLUE_LASER_SWORD.get());
+        output.accept(GREEN_LASER_SWORD.get());
+        output.accept(RED_LASER_SWORD.get());
+        output.accept(YELLOW_LASER_SWORD.get());
+        output.accept(PURPLE_LASER_SWORD.get());
+
     }).build());
 
     public Sharewarearsenal() {
@@ -171,6 +178,13 @@ public class Sharewarearsenal {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRASS_BOOTS.get());
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRASS_SWORD);
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRASS_AXE);
+
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BLUE_LASER_SWORD);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(GREEN_LASER_SWORD);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(RED_LASER_SWORD);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(YELLOW_LASER_SWORD);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(PURPLE_LASER_SWORD);
+        
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

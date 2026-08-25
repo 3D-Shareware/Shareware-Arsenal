@@ -13,6 +13,7 @@ import me.kev.sharewarearsenal.Items.BronzeArmor.BronzeBootsItem;
 import me.kev.sharewarearsenal.Items.BronzeArmor.BronzeChestplateItem;
 import me.kev.sharewarearsenal.Items.BronzeArmor.BronzeHelmetItem;
 import me.kev.sharewarearsenal.Items.BronzeArmor.BronzeLeggingsItem;
+import me.kev.sharewarearsenal.Items.LaserSwords.*;
 import me.kev.sharewarearsenal.Items.RedDiamondArmor.RedDiamondBootsItem;
 import me.kev.sharewarearsenal.Items.RedDiamondArmor.RedDiamondChestplateItem;
 import me.kev.sharewarearsenal.Items.RedDiamondArmor.RedDiamondHelmetItem;
@@ -21,6 +22,7 @@ import me.kev.sharewarearsenal.Items.RedDiamondTools.*;
 import me.kev.sharewarearsenal.MiscClasses.AllArmorMaterials;
 import me.kev.sharewarearsenal.Tiers.BrassTier;
 import me.kev.sharewarearsenal.Tiers.BronzeTier;
+import me.kev.sharewarearsenal.Tiers.LaserTier;
 import me.kev.sharewarearsenal.Tiers.RedDiamondTier;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
@@ -135,6 +137,21 @@ public class Items {
     public static final RegistryObject<Item> BRASS_UPGRADE_SMITHING_TEMPLATE =
             ITEMS.register("brass_upgrade_smithing_template", () -> new BrassUpgradeSmithingTemplateItem(new Item.Properties()));
 
+    // Blue Laser Sword
+    public static final RegistryObject<Item> BLUE_LASER_SWORD =
+            ITEMS.register("blue_laser_sword", () -> new BlueLaserSwordItem(new LaserTier(), 6, -2.4f, new Item.Properties()));
+    // Green Laser Sword
+    public static final RegistryObject<Item> GREEN_LASER_SWORD =
+            ITEMS.register("green_laser_sword", () -> new GreenLaserSwordItem(new LaserTier(), 6, -2.4f, new Item.Properties()));
+    // Red Laser Sword
+    public static final RegistryObject<Item> RED_LASER_SWORD =
+            ITEMS.register("red_laser_sword", () -> new RedLaserSwordItem(new LaserTier(), 6, -2.4f, new Item.Properties()));
+    // Yellow Laser Sword
+    public static final RegistryObject<Item> YELLOW_LASER_SWORD =
+            ITEMS.register("yellow_laser_sword", () -> new YellowLaserSwordItem(new LaserTier(), 6, -2.4f, new Item.Properties()));
+    // Purple Laser Sword
+    public static final RegistryObject<Item> PURPLE_LASER_SWORD =
+            ITEMS.register("purple_laser_sword", () -> new PurpleLaserSwordItem(new LaserTier(), 6, -2.4f, new Item.Properties()));
 
     public static final TagKey<Item> RED_DIAMOND_TOOLS = ItemTags.create(new ResourceLocation("sharewarearsenal", "red_diamond_tools"));
 
