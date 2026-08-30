@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "W": {
+      "item": "minecraft:tnt"
+    },
+    "o": {
+      "item": "sharewarearsenal:brass_ingot"
+    }
+  },
+  "pattern": [
+    "WoW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "sharewarearsenal:blast_shield"
+  },
+  "show_notification": true
+}

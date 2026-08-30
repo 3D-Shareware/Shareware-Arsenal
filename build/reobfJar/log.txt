@@ -122,30 +122,30 @@ Adding Libraries to Inheritance
 Reading Input: /home/kevin/IdeaProjects/SharewareArsenal/build/libs/sharewarearsenal-1.0-SNAPSHOT.jar
 Adding input to inheritance map
 Processing entries
+Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/LaserTier/getUses()I from net/minecraft/world/item/Tier/getUses()I: getUses -> m_6609_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/LaserTier/getSpeed()F from net/minecraft/world/item/Tier/getSpeed()F: getSpeed -> m_6624_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/LaserTier/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient; from net/minecraft/world/item/Tier/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient;: getRepairIngredient -> m_6282_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/LaserTier/getEnchantmentValue()I from net/minecraft/world/item/Tier/getEnchantmentValue()I: getEnchantmentValue -> m_6601_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/LaserTier/getLevel()I from net/minecraft/world/item/Tier/getLevel()I: getLevel -> m_6604_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/RedDiamondTier/getUses()I from net/minecraft/world/item/Tier/getUses()I: getUses -> m_6609_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/LaserTier/getAttackDamageBonus()F from net/minecraft/world/item/Tier/getAttackDamageBonus()F: getAttackDamageBonus -> m_6631_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BronzeTier/getUses()I from net/minecraft/world/item/Tier/getUses()I: getUses -> m_6609_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BronzeTier/getSpeed()F from net/minecraft/world/item/Tier/getSpeed()F: getSpeed -> m_6624_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BronzeTier/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient; from net/minecraft/world/item/Tier/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient;: getRepairIngredient -> m_6282_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BronzeTier/getEnchantmentValue()I from net/minecraft/world/item/Tier/getEnchantmentValue()I: getEnchantmentValue -> m_6601_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BronzeTier/getLevel()I from net/minecraft/world/item/Tier/getLevel()I: getLevel -> m_6604_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BronzeTier/getAttackDamageBonus()F from net/minecraft/world/item/Tier/getAttackDamageBonus()F: getAttackDamageBonus -> m_6631_
-Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/RedDiamondTier/getUses()I from net/minecraft/world/item/Tier/getUses()I: getUses -> m_6609_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BrassTier/getUses()I from net/minecraft/world/item/Tier/getUses()I: getUses -> m_6609_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BrassTier/getSpeed()F from net/minecraft/world/item/Tier/getSpeed()F: getSpeed -> m_6624_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BrassTier/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient; from net/minecraft/world/item/Tier/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient;: getRepairIngredient -> m_6282_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BrassTier/getEnchantmentValue()I from net/minecraft/world/item/Tier/getEnchantmentValue()I: getEnchantmentValue -> m_6601_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/RedDiamondTier/getSpeed()F from net/minecraft/world/item/Tier/getSpeed()F: getSpeed -> m_6624_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/RedDiamondTier/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient; from net/minecraft/world/item/Tier/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient;: getRepairIngredient -> m_6282_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/RedDiamondTier/getEnchantmentValue()I from net/minecraft/world/item/Tier/getEnchantmentValue()I: getEnchantmentValue -> m_6601_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/RedDiamondTier/getLevel()I from net/minecraft/world/item/Tier/getLevel()I: getLevel -> m_6604_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/RedDiamondTier/getAttackDamageBonus()F from net/minecraft/world/item/Tier/getAttackDamageBonus()F: getAttackDamageBonus -> m_6631_
-Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BrassTier/getUses()I from net/minecraft/world/item/Tier/getUses()I: getUses -> m_6609_
-Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BrassTier/getSpeed()F from net/minecraft/world/item/Tier/getSpeed()F: getSpeed -> m_6624_
-Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BrassTier/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient; from net/minecraft/world/item/Tier/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient;: getRepairIngredient -> m_6282_
-Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BrassTier/getEnchantmentValue()I from net/minecraft/world/item/Tier/getEnchantmentValue()I: getEnchantmentValue -> m_6601_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BrassTier/getLevel()I from net/minecraft/world/item/Tier/getLevel()I: getLevel -> m_6604_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/BrassTier/getAttackDamageBonus()F from net/minecraft/world/item/Tier/getAttackDamageBonus()F: getAttackDamageBonus -> m_6631_
-Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/LaserTier/getUses()I from net/minecraft/world/item/Tier/getUses()I: getUses -> m_6609_
-Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/LaserTier/getSpeed()F from net/minecraft/world/item/Tier/getSpeed()F: getSpeed -> m_6624_
-Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/LaserTier/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient; from net/minecraft/world/item/Tier/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient;: getRepairIngredient -> m_6282_
-Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/LaserTier/getEnchantmentValue()I from net/minecraft/world/item/Tier/getEnchantmentValue()I: getEnchantmentValue -> m_6601_
-Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/LaserTier/getLevel()I from net/minecraft/world/item/Tier/getLevel()I: getLevel -> m_6604_
-Conflicting propagated mapping for me/kev/sharewarearsenal/Tiers/LaserTier/getAttackDamageBonus()F from net/minecraft/world/item/Tier/getAttackDamageBonus()F: getAttackDamageBonus -> m_6631_
 Conflicting propagated mapping for me/kev/sharewarearsenal/MiscClasses/AllArmorMaterials/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient; from net/minecraft/world/item/ArmorMaterial/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient;: getRepairIngredient -> m_6230_
 Conflicting propagated mapping for me/kev/sharewarearsenal/MiscClasses/AllArmorMaterials/getEnchantmentValue()I from net/minecraft/world/item/ArmorMaterial/getEnchantmentValue()I: getEnchantmentValue -> m_6646_
 Conflicting propagated mapping for me/kev/sharewarearsenal/MiscClasses/AllArmorMaterials/getKnockbackResistance()F from net/minecraft/world/item/ArmorMaterial/getKnockbackResistance()F: getKnockbackResistance -> m_6649_
@@ -154,17 +154,19 @@ Conflicting propagated mapping for me/kev/sharewarearsenal/MiscClasses/AllArmorM
 Conflicting propagated mapping for me/kev/sharewarearsenal/MiscClasses/AllArmorMaterials/getDefenseForType(Lnet/minecraft/world/item/ArmorItem$Type;)I from net/minecraft/world/item/ArmorMaterial/getDefenseForType(Lnet/minecraft/world/item/ArmorItem$Type;)I: getDefenseForType -> m_7366_
 Conflicting propagated mapping for me/kev/sharewarearsenal/MiscClasses/AllArmorMaterials/getEquipSound()Lnet/minecraft/sounds/SoundEvent; from net/minecraft/world/item/ArmorMaterial/getEquipSound()Lnet/minecraft/sounds/SoundEvent;: getEquipSound -> m_7344_
 Conflicting propagated mapping for me/kev/sharewarearsenal/MiscClasses/AllArmorMaterials/getDurabilityForType(Lnet/minecraft/world/item/ArmorItem$Type;)I from net/minecraft/world/item/ArmorMaterial/getDurabilityForType(Lnet/minecraft/world/item/ArmorItem$Type;)I: getDurabilityForType -> m_266425_
-Conflicting propagated mapping for me/kev/sharewarearsenal/Items/Alloys/BronzeUpgradeSmithingTemplateItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Items/Alloys/BronzeIngotItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for me/kev/sharewarearsenal/Items/Alloys/BrassIngotItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Items/Alloys/BronzeUpgradeSmithingTemplateItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Items/Alloys/BrassUpgradeSmithingTemplateItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Items/Alloys/BrassIngotItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Items/RedDiamondTools/RedDiamondSwordItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Items/RedDiamondTools/RedDiamondPickaxeItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Items/RedDiamondTools/RedDiamondAxeItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Items/Shields/BlastShieldItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/ShieldItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Items/RedDiamondTools/RedDiamondHoeItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
 Conflicting propagated mapping for me/kev/sharewarearsenal/Items/RedDiamondTools/RedDiamondShovelItem/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V from net/minecraft/world/item/Item/appendHoverText(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V: appendHoverText -> m_7373_
-Conflicting propagated mapping for net/minecraft/world/entity/LivingEntity/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V from net/minecraft/world/entity/player/Player/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V: lambda$addAdditionalSaveData$3 -> m_219754_
+Conflicting propagated mapping for me/kev/sharewarearsenal/Renderers/BlastShieldRenderer/renderByItem(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemDisplayContext;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V from net/minecraft/client/renderer/BlockEntityWithoutLevelRenderer/renderByItem(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemDisplayContext;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V: renderByItem -> m_108829_
 Conflicting propagated mapping for net/minecraftforge/event/BuildCreativeModeTabContentsEvent/accept(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/CreativeModeTab$TabVisibility;)V from net/minecraft/world/item/CreativeModeTab$Output/accept(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/CreativeModeTab$TabVisibility;)V: accept -> m_246267_
+Conflicting propagated mapping for net/minecraft/world/entity/LivingEntity/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V from net/minecraft/world/entity/player/Player/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V: lambda$addAdditionalSaveData$3 -> m_219754_
 Adding extras
 Sorting
 Writing Output: /home/kevin/IdeaProjects/SharewareArsenal/build/reobfJar/output.jar
@@ -172,11 +174,16 @@ Writing Output: /home/kevin/IdeaProjects/SharewareArsenal/build/reobfJar/output.
   META-INF/MANIFEST.MF
   META-INF/mods.toml
   assets/
+  assets/minecraft/
+  assets/minecraft/atlases/
+  assets/minecraft/atlases/blocks.json
   assets/sharewarearsenal/
   assets/sharewarearsenal/lang/
   assets/sharewarearsenal/lang/en_us.json
   assets/sharewarearsenal/models/
   assets/sharewarearsenal/models/item/
+  assets/sharewarearsenal/models/item/blast_shield.json
+  assets/sharewarearsenal/models/item/blast_shield_blocking.json
   assets/sharewarearsenal/models/item/blue_laser_sword.json
   assets/sharewarearsenal/models/item/brass_axe.json
   assets/sharewarearsenal/models/item/brass_boots.json
@@ -215,6 +222,9 @@ Writing Output: /home/kevin/IdeaProjects/SharewareArsenal/build/reobfJar/output.
   assets/sharewarearsenal/models/item/red_laser_sword.json
   assets/sharewarearsenal/models/item/yellow_laser_sword.json
   assets/sharewarearsenal/textures/
+  assets/sharewarearsenal/textures/entity/
+  assets/sharewarearsenal/textures/entity/blast_shield.png
+  assets/sharewarearsenal/textures/entity/blast_shield_brass.png
   assets/sharewarearsenal/textures/item/
   assets/sharewarearsenal/textures/item/blue_laser_sword.png
   assets/sharewarearsenal/textures/item/blue_laser_sword.png.mcmeta
@@ -283,6 +293,7 @@ Writing Output: /home/kevin/IdeaProjects/SharewareArsenal/build/reobfJar/output.
   data/sharewarearsenal/advancements/recipes/red_diamond_sword.json
   data/sharewarearsenal/advancements/recipes/root.json
   data/sharewarearsenal/recipes/
+  data/sharewarearsenal/recipes/blast_shield.json
   data/sharewarearsenal/recipes/brass_axe_smithing.json
   data/sharewarearsenal/recipes/brass_boots_smithing.json
   data/sharewarearsenal/recipes/brass_chestplate_smithing.json
@@ -364,10 +375,16 @@ Writing Output: /home/kevin/IdeaProjects/SharewareArsenal/build/reobfJar/output.
   me/kev/sharewarearsenal/Items/RedDiamondTools/RedDiamondPickaxeItem.class
   me/kev/sharewarearsenal/Items/RedDiamondTools/RedDiamondShovelItem.class
   me/kev/sharewarearsenal/Items/RedDiamondTools/RedDiamondSwordItem.class
+  me/kev/sharewarearsenal/Items/Shields/
+  me/kev/sharewarearsenal/Items/Shields/BlastShieldItem$1.class
+  me/kev/sharewarearsenal/Items/Shields/BlastShieldItem.class
   me/kev/sharewarearsenal/MiscClasses/
   me/kev/sharewarearsenal/MiscClasses/AllArmorMaterials.class
+  me/kev/sharewarearsenal/Renderers/
+  me/kev/sharewarearsenal/Renderers/BlastShieldRenderer.class
   me/kev/sharewarearsenal/Sharewarearsenal$ClientModEvents.class
   me/kev/sharewarearsenal/Sharewarearsenal$RedDiamondHealer.class
+  me/kev/sharewarearsenal/Sharewarearsenal$ShieldEffects.class
   me/kev/sharewarearsenal/Sharewarearsenal.class
   me/kev/sharewarearsenal/Tiers/
   me/kev/sharewarearsenal/Tiers/BrassTier.class

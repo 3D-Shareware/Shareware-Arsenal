@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/shield_blocking",
+    "textures": {
+        "layer0": "sharewarearsenal:item/blast_shield"
+    }
+}

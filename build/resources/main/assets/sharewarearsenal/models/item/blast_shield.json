@@ -1,0 +1,14 @@
+{
+    "parent": "minecraft:item/shield",
+    "textures": {
+        "layer0": "sharewarearsenal:item/blast_shield"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "blocking": 1
+            },
+            "model": "sharewarearsenal:item/blast_shield_blocking"
+        }
+    ]
+}

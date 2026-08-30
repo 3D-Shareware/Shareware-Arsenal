@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import me.kev.sharewarearsenal.Items.*;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -11,6 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
@@ -26,6 +28,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.entity.living.ShieldBlockEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.level.BlockEvent;
@@ -101,6 +104,8 @@ public class Sharewarearsenal {
         output.accept(RED_LASER_SWORD.get());
         output.accept(YELLOW_LASER_SWORD.get());
         output.accept(PURPLE_LASER_SWORD.get());
+
+        output.accept(BLAST_SHIELD.get());
 
     }).build());
 
@@ -184,6 +189,8 @@ public class Sharewarearsenal {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(RED_LASER_SWORD);
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(YELLOW_LASER_SWORD);
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(PURPLE_LASER_SWORD);
+
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BLAST_SHIELD);
         
     }
 
@@ -226,7 +233,24 @@ public class Sharewarearsenal {
                 }
             }
         }
+    }
 
+    @Mod.EventBusSubscriber(modid = "sharewarearsenal", bus = Mod.EventBusSubscriber.Bus.FORGE)
+    public static class ShieldEffects {
+        @SubscribeEvent
+        public static void shieldEffect(ShieldBlockEvent event) {
+            if (event.getEntity().level().isClientSide) return;
+            ItemStack activeStack = event.getEntity().getUseItem();
+            if (activeStack.isEmpty()) return;
+
+            // Blast Shield explodes!
+            if (activeStack.is(BLAST_SHIELD.get())) {
+                var attacker = event.getDamageSource().getEntity();
+                if (attacker != null) {
+                    event.getEntity().level().explode(event.getEntity(), attacker.getX(), attacker.getY() + 0.125, attacker.getZ(), 1.5f, Level.ExplosionInteraction.TNT);
+                }
+            }
+        }
     }
 
 
@@ -239,6 +263,13 @@ public class Sharewarearsenal {
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
+            event.enqueueWork(() -> {
+                ItemProperties.register(BLAST_SHIELD.get(), new ResourceLocation("blocking"),
+                        (stack, level, entity, seed) -> entity != null && entity.isUsingItem() && entity.getUseItem() == stack ? 1.0F : 0.0F
+                );
+            });
+
         }
     }
 

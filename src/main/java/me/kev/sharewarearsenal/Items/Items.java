@@ -19,6 +19,7 @@ import me.kev.sharewarearsenal.Items.RedDiamondArmor.RedDiamondChestplateItem;
 import me.kev.sharewarearsenal.Items.RedDiamondArmor.RedDiamondHelmetItem;
 import me.kev.sharewarearsenal.Items.RedDiamondArmor.RedDiamondLeggingsItem;
 import me.kev.sharewarearsenal.Items.RedDiamondTools.*;
+import me.kev.sharewarearsenal.Items.Shields.BlastShieldItem;
 import me.kev.sharewarearsenal.MiscClasses.AllArmorMaterials;
 import me.kev.sharewarearsenal.Tiers.BrassTier;
 import me.kev.sharewarearsenal.Tiers.BronzeTier;
@@ -152,6 +153,10 @@ public class Items {
     // Purple Laser Sword
     public static final RegistryObject<Item> PURPLE_LASER_SWORD =
             ITEMS.register("purple_laser_sword", () -> new PurpleLaserSwordItem(new LaserTier(), 6, -2.4f, new Item.Properties()));
+
+    // Blast Shield
+    public static final RegistryObject<Item> BLAST_SHIELD =
+            ITEMS.register("blast_shield", () -> new BlastShieldItem(new Item.Properties().defaultDurability(336)));
 
     public static final TagKey<Item> RED_DIAMOND_TOOLS = ItemTags.create(new ResourceLocation("sharewarearsenal", "red_diamond_tools"));
 

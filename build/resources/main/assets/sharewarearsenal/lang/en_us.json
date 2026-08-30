@@ -40,10 +40,13 @@
   "item.sharewarearsenal.yellow_laser_sword": "Yellow Laser Sword",
   "item.sharewarearsenal.purple_laser_sword": "Purple Laser Sword",
 
+  "item.sharewarearsenal.blast_shield": "Blast Shield",
+
   "tooltip.sharewarearsenal.hold_shift_for_info": "Hold SHIFT for info...",
   "tooltip.sharewarearsenal.red_diamond_pickaxe": "Mining Diamond Ore always drops a Red Diamond",
   "tooltip.sharewarearsenal.red_diamond_tool_strike": "Heals back 25% of damage dealt",
   "tooltip.sharewarearsenal.red_diamond_tool_mine": "Heals 1 health per block mined",
+  "tooltip.sharewarearsenal.blast_shield": "Explodes attackers",
 
   "item.sharewarearsenal.bronze_upgrade_smithing_template": "Smithing Template",
   "item.sharewarearsenal.brass_upgrade_smithing_template": "Smithing Template",
