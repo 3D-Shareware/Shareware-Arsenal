@@ -12,7 +12,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.entity.monster.Creeper;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
@@ -26,6 +27,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.living.ShieldBlockEvent;
@@ -99,6 +101,8 @@ public class Sharewarearsenal {
         output.accept(BRASS_HOE.get());
         output.accept(BRASS_UPGRADE_SMITHING_TEMPLATE.get());
 
+        output.accept(IRON_GAUNTLET.get());
+
         output.accept(BLUE_LASER_SWORD.get());
         output.accept(GREEN_LASER_SWORD.get());
         output.accept(RED_LASER_SWORD.get());
@@ -146,6 +150,9 @@ public class Sharewarearsenal {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(IRON_GAUNTLET);
+
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) event.accept(RED_DIAMOND);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(RED_DIAMOND_SHOVEL);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(RED_DIAMOND_PICKAXE);
@@ -249,6 +256,21 @@ public class Sharewarearsenal {
                 if (attacker != null) {
                     event.getEntity().level().explode(event.getEntity(), attacker.getX(), attacker.getY() + 0.125, attacker.getZ(), 1.5f, Level.ExplosionInteraction.TNT);
                 }
+            }
+        }
+    }
+
+    @Mod.EventBusSubscriber(modid = "sharewarearsenal", bus = Mod.EventBusSubscriber.Bus.FORGE)
+    public static class HurtTimeBypasses {
+        @SubscribeEvent
+        public static void onLivingAttack(LivingAttackEvent event) {
+            if (event.getEntity().level().isClientSide) return;
+            LivingEntity entity = event.getEntity();
+            if (entity == null) return;
+            Entity attacker = event.getSource().getEntity();
+            if (attacker instanceof LivingEntity) {
+                ItemStack weapon = ((LivingEntity) attacker).getMainHandItem();
+                if (!weapon.isEmpty() && weapon.is(GAUNTLETS)) entity.invulnerableTime = 0;
             }
         }
     }

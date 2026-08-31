@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "X  ",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "item": "sharewarearsenal:iron_gauntlet"
+  }
+}

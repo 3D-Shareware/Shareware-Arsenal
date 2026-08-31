@@ -6,6 +6,7 @@ import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ShieldItem;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
@@ -19,6 +20,11 @@ public class BlastShieldItem extends ShieldItem {
 
     public BlastShieldItem(Properties p_43089_) {
         super(p_43089_);
+    }
+
+    @Override
+    public boolean isValidRepairItem(ItemStack p_43091_, ItemStack p_43092_) {
+        return p_43092_.is(Items.TNT) || super.isValidRepairItem(p_43091_, p_43092_);
     }
 
     @Override

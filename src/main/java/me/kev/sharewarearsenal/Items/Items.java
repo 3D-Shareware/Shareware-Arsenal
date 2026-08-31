@@ -29,6 +29,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
+import me.kev.sharewarearsenal.Items.GauntletItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -138,6 +139,10 @@ public class Items {
     public static final RegistryObject<Item> BRASS_UPGRADE_SMITHING_TEMPLATE =
             ITEMS.register("brass_upgrade_smithing_template", () -> new BrassUpgradeSmithingTemplateItem(new Item.Properties()));
 
+    // Iron Gauntlet
+    public static final RegistryObject<Item> IRON_GAUNTLET =
+            ITEMS.register("iron_gauntlet", () -> new GauntletItem(Tiers.IRON, 1.5f, 0f, new Item.Properties()));
+
     // Blue Laser Sword
     public static final RegistryObject<Item> BLUE_LASER_SWORD =
             ITEMS.register("blue_laser_sword", () -> new BlueLaserSwordItem(new LaserTier(), 6, -2.4f, new Item.Properties()));
@@ -159,6 +164,7 @@ public class Items {
             ITEMS.register("blast_shield", () -> new BlastShieldItem(new Item.Properties().defaultDurability(336)));
 
     public static final TagKey<Item> RED_DIAMOND_TOOLS = ItemTags.create(new ResourceLocation("sharewarearsenal", "red_diamond_tools"));
+    public static final TagKey<Item> GAUNTLETS = ItemTags.create(new ResourceLocation("sharewarearsenal", "gauntlets"));
 
 
     public static void register(IEventBus eventBus) {
