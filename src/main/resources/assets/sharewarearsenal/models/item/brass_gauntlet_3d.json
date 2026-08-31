@@ -1,0 +1,51 @@
+{
+  "format_version": "1.9.0",
+  "credit": "Made with Blockbench by 3D_Shareware. Blockbench is my savior.",
+  "textures": {
+    "0": "sharewarearsenal:item/brass_gauntlet_model",
+    "particle": "sharewarearsenal:block/brass_block"
+  },
+  "elements": [
+    {
+      "name": "fist",
+      "from": [6, 4, 8],
+      "to": [10, 8, 14],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 14]},
+      "faces": {
+        "north": {"uv": [12, 4, 8, 0], "rotation": 180, "texture": "#0"},
+        "east": {"uv": [4, 0, 8, 6], "rotation": 90, "texture": "#0"},
+        "south": {"uv": [12, 4, 8, 8], "texture": "#0"},
+        "west": {"uv": [4, 6, 8, 12], "rotation": 270, "texture": "#0"},
+        "up": {"uv": [0, 6, 4, 12], "texture": "#0"},
+        "down": {"uv": [0, 0, 4, 6], "rotation": 180, "texture": "#0"}
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [0, 0.5, -0.75],
+      "scale": [1.3, 1.3, 1.3]
+    },
+    "thirdperson_lefthand": {
+      "translation": [0, 0.5, -0.75],
+      "scale": [1.3, 1.3, 1.3]
+    },
+    "firstperson_righthand": {
+      "rotation": [29, 0, 0],
+      "translation": [3, 5.5, -1]
+    },
+    "firstperson_lefthand": {
+      "rotation": [29, 0, 0],
+      "translation": [3, 5.5, -1]
+    }
+  },
+  "groups": [
+    {
+      "name": "root",
+      "origin": [8, 8, 8],
+      "scope": 0,
+      "color": 0,
+      "children": [0]
+    }
+  ]
+}

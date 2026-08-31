@@ -66,6 +66,14 @@ public class Sharewarearsenal {
 
     // Creative tab
     public static final RegistryObject<CreativeModeTab> SHAREWARE_ARSENAL_TAB = CREATIVE_MODE_TABS.register("shareware_arsenal", () -> CreativeModeTab.builder().title(Component.translatable("creativetab.sharewarearsenal.arsenal")).withTabsBefore(CreativeModeTabs.COMBAT).icon(() -> RED_DIAMOND.get().getDefaultInstance()).displayItems((parameters, output) -> {
+
+        output.accept(WOODEN_GAUNTLET.get());
+        output.accept(STONE_GAUNTLET.get());
+        output.accept(IRON_GAUNTLET.get());
+        output.accept(GOLDEN_GAUNTLET.get());
+        output.accept(DIAMOND_GAUNTLET.get());
+        output.accept(NETHERITE_GAUNTLET.get());
+
         output.accept(RED_DIAMOND.get());
         output.accept(RED_DIAMOND_HELMET.get());
         output.accept(RED_DIAMOND_CHESTPLATE.get());
@@ -76,6 +84,7 @@ public class Sharewarearsenal {
         output.accept(RED_DIAMOND_PICKAXE.get());
         output.accept(RED_DIAMOND_SHOVEL.get());
         output.accept(RED_DIAMOND_HOE.get());
+        output.accept(RED_DIAMOND_GAUNTLET.get());
 
         output.accept(BRONZE_INGOT.get());
         output.accept(BRONZE_HELMET.get());
@@ -87,6 +96,7 @@ public class Sharewarearsenal {
         output.accept(BRONZE_PICKAXE.get());
         output.accept(BRONZE_SHOVEL.get());
         output.accept(BRONZE_HOE.get());
+        output.accept(BRONZE_GAUNTLET.get());
         output.accept(BRONZE_UPGRADE_SMITHING_TEMPLATE.get());
 
         output.accept(BRASS_INGOT.get());
@@ -99,9 +109,8 @@ public class Sharewarearsenal {
         output.accept(BRASS_PICKAXE.get());
         output.accept(BRASS_SHOVEL.get());
         output.accept(BRASS_HOE.get());
+        output.accept(BRASS_GAUNTLET.get());
         output.accept(BRASS_UPGRADE_SMITHING_TEMPLATE.get());
-
-        output.accept(IRON_GAUNTLET.get());
 
         output.accept(BLUE_LASER_SWORD.get());
         output.accept(GREEN_LASER_SWORD.get());
@@ -151,7 +160,12 @@ public class Sharewarearsenal {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(WOODEN_GAUNTLET);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(STONE_GAUNTLET);
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(IRON_GAUNTLET);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(GOLDEN_GAUNTLET);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(DIAMOND_GAUNTLET);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(NETHERITE_GAUNTLET);
 
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) event.accept(RED_DIAMOND);
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) event.accept(RED_DIAMOND_SHOVEL);
@@ -164,6 +178,7 @@ public class Sharewarearsenal {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(RED_DIAMOND_BOOTS.get());
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(RED_DIAMOND_SWORD);
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(RED_DIAMOND_AXE);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(RED_DIAMOND_GAUNTLET);
 
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) event.accept(BRONZE_INGOT);
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) event.accept(BRONZE_UPGRADE_SMITHING_TEMPLATE);
@@ -177,6 +192,7 @@ public class Sharewarearsenal {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRONZE_BOOTS.get());
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRONZE_SWORD);
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRONZE_AXE);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRONZE_GAUNTLET);
 
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) event.accept(BRASS_INGOT);
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) event.accept(BRASS_UPGRADE_SMITHING_TEMPLATE);
@@ -190,6 +206,7 @@ public class Sharewarearsenal {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRASS_BOOTS.get());
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRASS_SWORD);
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRASS_AXE);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BRASS_GAUNTLET);
 
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BLUE_LASER_SWORD);
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(GREEN_LASER_SWORD);

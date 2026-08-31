@@ -139,9 +139,33 @@ public class Items {
     public static final RegistryObject<Item> BRASS_UPGRADE_SMITHING_TEMPLATE =
             ITEMS.register("brass_upgrade_smithing_template", () -> new BrassUpgradeSmithingTemplateItem(new Item.Properties()));
 
+    // Wooden Gauntlet
+    public static final RegistryObject<Item> WOODEN_GAUNTLET =
+            ITEMS.register("wooden_gauntlet", () -> new GauntletItem(Tiers.WOOD, 1.5f, 0f, new Item.Properties()));
+    // Stone Gauntlet
+    public static final RegistryObject<Item> STONE_GAUNTLET =
+            ITEMS.register("stone_gauntlet", () -> new GauntletItem(Tiers.STONE, 1.5f, 0f, new Item.Properties()));
     // Iron Gauntlet
     public static final RegistryObject<Item> IRON_GAUNTLET =
             ITEMS.register("iron_gauntlet", () -> new GauntletItem(Tiers.IRON, 1.5f, 0f, new Item.Properties()));
+    // Golden Gauntlet
+    public static final RegistryObject<Item> GOLDEN_GAUNTLET =
+            ITEMS.register("golden_gauntlet", () -> new GauntletItem(Tiers.GOLD, 1.5f, 0f, new Item.Properties()));
+    // Diamond Gauntlet
+    public static final RegistryObject<Item> DIAMOND_GAUNTLET =
+            ITEMS.register("diamond_gauntlet", () -> new GauntletItem(Tiers.DIAMOND, 1.5f, 0f, new Item.Properties()));
+    // Netherite Gauntlet
+    public static final RegistryObject<Item> NETHERITE_GAUNTLET =
+            ITEMS.register("netherite_gauntlet", () -> new GauntletItem(Tiers.NETHERITE, 1.5f, 0f, new Item.Properties()));
+    // Red Diamond Gauntlet
+    public static final RegistryObject<Item> RED_DIAMOND_GAUNTLET =
+            ITEMS.register("red_diamond_gauntlet", () -> new RedDiamondGauntletItem(new RedDiamondTier(), 4.5f, 0f, new Item.Properties()));
+    // Bronze Gauntlet
+    public static final RegistryObject<Item> BRONZE_GAUNTLET =
+            ITEMS.register("bronze_gauntlet", () -> new GauntletItem(new BronzeTier(), 3.5f, 0.8f, new Item.Properties()));
+    // Brass Gauntlet
+    public static final RegistryObject<Item> BRASS_GAUNTLET =
+            ITEMS.register("brass_gauntlet", () -> new BrassGauntletItem(new BrassTier(), 3.5f, 0f, new Item.Properties()));
 
     // Blue Laser Sword
     public static final RegistryObject<Item> BLUE_LASER_SWORD =

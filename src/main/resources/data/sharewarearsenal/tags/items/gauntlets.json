@@ -1,5 +1,13 @@
 {
   "values": [
-    "sharewarearsenal:iron_gauntlet"
+    "sharewarearsenal:wooden_gauntlet",
+    "sharewarearsenal:stone_gauntlet",
+    "sharewarearsenal:iron_gauntlet",
+    "sharewarearsenal:golden_gauntlet",
+    "sharewarearsenal:diamond_gauntlet",
+    "sharewarearsenal:netherite_gauntlet",
+    "sharewarearsenal:red_diamond_gauntlet",
+    "sharewarearsenal:bronze_gauntlet",
+    "sharewarearsenal:brass_gauntlet"
   ]
 }
