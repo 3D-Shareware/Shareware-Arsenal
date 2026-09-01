@@ -49,8 +49,15 @@
   "item.sharewarearsenal.red_diamond_gauntlet": "Red Diamond Gauntlet",
   "item.sharewarearsenal.bronze_gauntlet": "Bronze Gauntlet",
   "item.sharewarearsenal.brass_gauntlet": "Brass Gauntlet",
+  "item.sharewarearsenal.falcon_gauntlet": "Falcon Gauntlet",
 
   "item.sharewarearsenal.blast_shield": "Blast Shield",
+
+  "item.sharewarearsenal.spirit_bow": "Spirit Bow",
+  "item.sharewarearsenal.scrapper_bow": "Scrapper Bow",
+
+  "item.sharewarearsenal.shackled_arrow": "Shackled Arrow",
+  "item.sharewarearsenal.triple_arrow": "Triple Arrow",
 
   "tooltip.sharewarearsenal.hold_shift_for_info": "Hold SHIFT for info...",
   "tooltip.sharewarearsenal.red_diamond_pickaxe": "Mining Diamond Ore always drops a Red Diamond",
@@ -58,6 +65,7 @@
   "tooltip.sharewarearsenal.red_diamond_tool_mine": "Heals 1 health per block mined",
   "tooltip.sharewarearsenal.blast_shield": "Explodes the attacker",
   "tooltip.sharewarearsenal.gauntlet": "Bypasses hurt time",
+  "tooltip.sharewarearsenal.falcon_gauntlet": "Hold right-click for 1 second, then release for a stronger punch",
 
   "item.sharewarearsenal.bronze_upgrade_smithing_template": "Smithing Template",
   "item.sharewarearsenal.brass_upgrade_smithing_template": "Smithing Template",
@@ -71,5 +79,9 @@
 
   "tooltip.sharewarearsenal.generic_smithing": "Ingredients:",
   "tooltip.sharewarearsenal.bronze_smithing": " Bronze Ingot",
-  "tooltip.sharewarearsenal.brass_smithing": " Brass Ingot"
+  "tooltip.sharewarearsenal.brass_smithing": " Brass Ingot",
+
+  "tooltip.sharewarearsenal.generic_arrow": "Requires:",
+  "tooltip.sharewarearsenal.shackled_arrow": " Spirit Bow",
+  "tooltip.sharewarearsenal.triple_arrow": " Scrapper Bow"
 }

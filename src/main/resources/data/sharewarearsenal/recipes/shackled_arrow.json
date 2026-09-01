@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:chain"
+    },
+    "X": {
+      "item": "minecraft:arrow"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "result": {
+    "count": 4,
+    "item": "sharewarearsenal:shackled_arrow"
+  },
+  "show_notification": true
+}

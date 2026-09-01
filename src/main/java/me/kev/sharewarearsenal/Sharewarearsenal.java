@@ -2,6 +2,9 @@ package me.kev.sharewarearsenal;
 
 import com.mojang.logging.LogUtils;
 import me.kev.sharewarearsenal.Items.*;
+import me.kev.sharewarearsenal.MiscClasses.SpecialItemProperties;
+import me.kev.sharewarearsenal.Particle.AllParticles;
+import me.kev.sharewarearsenal.Particle.FalconParticle;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.item.ItemProperties;
@@ -24,6 +27,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -50,6 +54,8 @@ import org.slf4j.Logger;
 
 import static me.kev.sharewarearsenal.Items.Items.*;
 import static me.kev.sharewarearsenal.Items.Items.BRASS_SWORD;
+import static me.kev.sharewarearsenal.Particle.AllParticles.FALCON_PARTICLE;
+import static me.kev.sharewarearsenal.Particle.AllParticles.PARTICLE_TYPES;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Sharewarearsenal.MODID)
@@ -120,6 +126,13 @@ public class Sharewarearsenal {
 
         output.accept(BLAST_SHIELD.get());
 
+        output.accept(SPIRIT_BOW.get());
+        output.accept(SCRAPPER_BOW.get());
+        output.accept(SHACKLED_ARROW.get());
+        output.accept(TRIPLE_ARROW.get());
+
+        output.accept(FALCON_GAUNTLET.get());
+
     }).build());
 
     public Sharewarearsenal() {
@@ -134,6 +147,8 @@ public class Sharewarearsenal {
         ITEMS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
+        // Register the Deferred Register to the mod event bus so tabs get registered
+        PARTICLE_TYPES.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -215,6 +230,13 @@ public class Sharewarearsenal {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(PURPLE_LASER_SWORD);
 
         if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(BLAST_SHIELD);
+
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(SPIRIT_BOW);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(SCRAPPER_BOW);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(SHACKLED_ARROW);
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(TRIPLE_ARROW);
+
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) event.accept(FALCON_GAUNTLET);
         
     }
 
@@ -309,7 +331,15 @@ public class Sharewarearsenal {
                 );
             });
 
+            SpecialItemProperties.addItemProperties();
+
         }
+
+        @SubscribeEvent
+        public static void registerParticleProvider(RegisterParticleProvidersEvent event) {
+            event.registerSpriteSet(FALCON_PARTICLE.get(), FalconParticle.Provider::new);
+        }
+
     }
 
 }

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "minecraft:feather"
+    },
+    "E": {
+      "item": "minecraft:hanging_roots"
+    },
+    "C": {
+      "tag": "minecraft:leaves"
+    },
+    "X": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " DX",
+    "E X",
+    " CX"
+  ],
+  "result": {
+    "item": "sharewarearsenal:spirit_bow"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "minecraft:feather"
+    },
+    "E": {
+      "item": "minecraft:pointed_dripstone"
+    },
+    "C": {
+      "item": "minecraft:nether_wart_block"
+    },
+    "X": {
+      "item": "minecraft:string"
+    },
+    "#": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "pattern": [
+    " DX",
+    "E#X",
+    " CX"
+  ],
+  "result": {
+    "item": "sharewarearsenal:scrapper_bow"
+  },
+  "show_notification": true
+}

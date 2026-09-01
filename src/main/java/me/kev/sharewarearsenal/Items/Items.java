@@ -4,6 +4,10 @@ import me.kev.sharewarearsenal.Items.Alloys.BrassIngotItem;
 import me.kev.sharewarearsenal.Items.Alloys.BrassUpgradeSmithingTemplateItem;
 import me.kev.sharewarearsenal.Items.Alloys.BronzeIngotItem;
 import me.kev.sharewarearsenal.Items.Alloys.BronzeUpgradeSmithingTemplateItem;
+import me.kev.sharewarearsenal.Items.Archery.ScrapperBowItem;
+import me.kev.sharewarearsenal.Items.Archery.ShackledArrowItem;
+import me.kev.sharewarearsenal.Items.Archery.SpiritBowItem;
+import me.kev.sharewarearsenal.Items.Archery.TripleArrowItem;
 import me.kev.sharewarearsenal.Items.BrassArmor.BrassBootsItem;
 import me.kev.sharewarearsenal.Items.BrassArmor.BrassChestplateItem;
 import me.kev.sharewarearsenal.Items.BrassArmor.BrassHelmetItem;
@@ -20,16 +24,13 @@ import me.kev.sharewarearsenal.Items.RedDiamondArmor.RedDiamondHelmetItem;
 import me.kev.sharewarearsenal.Items.RedDiamondArmor.RedDiamondLeggingsItem;
 import me.kev.sharewarearsenal.Items.RedDiamondTools.*;
 import me.kev.sharewarearsenal.Items.Shields.BlastShieldItem;
+import me.kev.sharewarearsenal.Items.Special.FalconGauntletItem;
 import me.kev.sharewarearsenal.MiscClasses.AllArmorMaterials;
-import me.kev.sharewarearsenal.Tiers.BrassTier;
-import me.kev.sharewarearsenal.Tiers.BronzeTier;
-import me.kev.sharewarearsenal.Tiers.LaserTier;
-import me.kev.sharewarearsenal.Tiers.RedDiamondTier;
+import me.kev.sharewarearsenal.Tiers.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.*;
-import me.kev.sharewarearsenal.Items.GauntletItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -166,6 +167,9 @@ public class Items {
     // Brass Gauntlet
     public static final RegistryObject<Item> BRASS_GAUNTLET =
             ITEMS.register("brass_gauntlet", () -> new BrassGauntletItem(new BrassTier(), 3.5f, 0f, new Item.Properties()));
+    // Falcon Gauntlet
+    public static final RegistryObject<Item> FALCON_GAUNTLET =
+            ITEMS.register("falcon_gauntlet", () -> new FalconGauntletItem(new FalconTier(), 4.5f, 0f, new Item.Properties().rarity(Rarity.RARE)));
 
     // Blue Laser Sword
     public static final RegistryObject<Item> BLUE_LASER_SWORD =
@@ -187,8 +191,23 @@ public class Items {
     public static final RegistryObject<Item> BLAST_SHIELD =
             ITEMS.register("blast_shield", () -> new BlastShieldItem(new Item.Properties().defaultDurability(336)));
 
+    // Spirit Bow
+    public static final RegistryObject<Item> SPIRIT_BOW =
+            ITEMS.register("spirit_bow", () -> new SpiritBowItem(new Item.Properties().defaultDurability(724)));
+    // Shackled Arrow
+    public static final RegistryObject<Item> SHACKLED_ARROW =
+            ITEMS.register("shackled_arrow", () -> new ShackledArrowItem(new Item.Properties()));
+    // Spirit Bow
+    public static final RegistryObject<Item> SCRAPPER_BOW =
+            ITEMS.register("scrapper_bow", () -> new ScrapperBowItem(6.0f, -2.4f, new Item.Properties().defaultDurability(724)));
+    // Shackled Arrow
+    public static final RegistryObject<Item> TRIPLE_ARROW =
+            ITEMS.register("triple_arrow", () -> new TripleArrowItem(new Item.Properties()));
+
     public static final TagKey<Item> RED_DIAMOND_TOOLS = ItemTags.create(new ResourceLocation("sharewarearsenal", "red_diamond_tools"));
     public static final TagKey<Item> GAUNTLETS = ItemTags.create(new ResourceLocation("sharewarearsenal", "gauntlets"));
+    public static final TagKey<Item> SPIRIT_BOW_ARROWS = ItemTags.create(new ResourceLocation("sharewarearsenal", "spirit_bow_arrows"));
+    public static final TagKey<Item> SCRAPPER_BOW_ARROWS = ItemTags.create(new ResourceLocation("sharewarearsenal", "scrapper_bow_arrows"));
 
 
     public static void register(IEventBus eventBus) {
